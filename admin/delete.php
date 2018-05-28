@@ -29,10 +29,7 @@
           $stmt = $pdo->prepare($sql);
           $stmt->execute(array($_POST['id']));
           header( 'Location: books.php?action=book-deleted' ) ;
-          // return; -----> doesn't work.
-          // echo "<div class='alert alert-success'>User deleted</div>";
-            // why the fuck this doesn't work. Not displaying the flash message in the location after redirect
-       }
+         }
 
      ?>
      <div style="height: 50px"></div>
