@@ -2,9 +2,9 @@
 
   require "header.php";
 
-  $stmt = $pdo->prepare("SELECT * FROM books where id = ?");
-  $stmt->execute(array($_GET['id']));
-  $row = $stmt->fetch(PDO::FETCH_ASSOC);
+  $query = $pdo->prepare("SELECT * FROM books where id = ?");
+  $query->execute(array($_GET['id']));
+  $row = $query->fetch(PDO::FETCH_ASSOC);
  ?>
  <section class="container mt-5">
       <?php if ( $row === false ) {
@@ -26,8 +26,8 @@
 
        if ( isset($_POST['delete']) && isset($_POST['id']) ) {
           $sql = "DELETE FROM books WHERE id = ?";
-          $stmt = $pdo->prepare($sql);
-          $stmt->execute(array($_POST['id']));
+          $query = $pdo->prepare($sql);
+          $query->execute(array($_POST['id']));
           header( 'Location: books.php?action=book-deleted' ) ;
          }
 
