@@ -3,7 +3,7 @@ PHP application to create, display and manage a list of your favourite books.
 
 Create a list of books which you can manage (edit, delete, add new items).
 
-Plain PHP, no frameworks.
+Plain PHP(7.2), no frameworks.
 No fancy designs nor animations, just bootstrap CSS.
 
 All you need to run it on your local machine is download it to your localhost (/var/www/html on linux or wherever your xampp/mamp handles your projects on windows or mac),
