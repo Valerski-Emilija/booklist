@@ -1,5 +1,4 @@
 # Booklist
-PHP application to create, display and manage a list of your favourite books.
 
 Create a list of books which you can manage (edit, delete, add new items).
 
