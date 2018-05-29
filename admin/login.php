@@ -2,7 +2,7 @@
 
   $msg = "";
    if(isset($_POST['login'])) {
-     if($_POST['password'] == 'mypassword') //---> Only for development on localhost.
+     if($_POST['name'] == 'admin' && $_POST['password'] == 'adminpassword') //---> Only for development on localhost.
      // Store your password in a safe way for real-world applications on production server.
       {
        session_start();
